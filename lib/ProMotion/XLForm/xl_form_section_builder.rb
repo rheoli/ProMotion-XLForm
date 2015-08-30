@@ -28,7 +28,6 @@ module ProMotion
       if section_data[:hidden]
         configure_hidden(section, section_data[:hidden])
       end
-      section.isDisabled = true
 
       section_data[:cells].each do |cell_data|
         cell = create_cell(cell_data)
